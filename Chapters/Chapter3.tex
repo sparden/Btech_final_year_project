@@ -1,0 +1,54 @@
+%--------------------------
+%-------------------------------------------
+
+\chapter{The Proposed Solution}
+
+
+This chapter presents a detailed description of the problem and the proposed solution. We have carried out
+an experiment to study the power dissipation problem for different set of applications on two different
+processor architecture. The problem we identified is the excessive power dissipation in the Execution unit
+of a core. We addressed this problem by proposing a solution which provides a provision for turning-off and
+turning-on the selected functional units dynamically at any given point of time.
+
+
+%\section{Power Dissipation in Execution Unit}
+% The experiment on power dissipation in Execution unit 
+
+
+
+
+\section{The Architecture}
+
+\begin{figure}
+ \begin{center} 
+  \includegraphics[scale=0.5]{superscalarcore.jpg}
+  \caption{A core with super scalar processor architecture}
+\end{center}
+\end{figure}
+
+%
+%
+%
+
+\begin{figure}
+ \begin{center}   
+  \includegraphics[scale=0.5]{superscalar-withpmu.jpg}
+  \caption{A core with super scalar processor architecture with a proposed power reducing unit}
+ \end{center}
+\end{figure}
+
+%
+%
+%
+
+\begin{figure}
+   \begin{center}
+     \includegraphics[scale=1]{counter.pdf}
+     \caption{A unit to track the threshold for deciding the power-off based on counter value}
+   \end{center}
+\end{figure}
+
+
+\section{Working Principle}
+
+%------------------------------------------------------------------------

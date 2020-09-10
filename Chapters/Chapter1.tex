@@ -1,0 +1,112 @@
+\chapter{INTRODUCTION}
+\label{chap:intro}
+
+%\section{Abstract}
+
+
+\section{Introduction and Background}
+
+Although the performance level of out-of-order superscalar processors is high,they consume much more energy
+than do in-order superscalar processors,because a large amount of energy is consumed by hardware for dynamic
+instruction scheduling such as an instruction queue(IQ) and a load/store queue (LSQ), which comprises mainly
+heavily multi-ported memories.
+
+The energy consumption per access of multi-ported memory. The energy consumption per access of multi-ported
+memory is proportional to its capacity and the number of its ports. Moreover, the number of accesses is also
+increased with the issue width. Consequently, its energy consumption is very large. We are going to develop
+a power-aware Adaptive superscalar Architecture which consumes lower energy and saves more power than the
+existed architectures.
+
+%
+%
+
+\section{Power Dissipation}
+
+In this section we will provide a background on power dissipation. There are two type of power
+dissipations \cite{power-dissipation}: 
+
+\begin{itemize}
+   \item Dynamic power dissipation \\
+
+          \begin{itemize}
+               \item Glitch power
+               \item Functional power
+          \end{itemize}
+   \item Static power dissipation        
+          
+\end{itemize}
+
+The dynamic power is defined as the switching power that is dissipated when the processor is in operation.
+Mathematically, the dynamic power is computed as the total energy divided by a given time duration. The
+dynamic power comes mainly from two sources: \textit{true functional activity} and \textit{glitch related
+activities}. The true functional activity which is required for the computation is the compulsory power that
+the processor has to dissipate in order to perform the computational task. Whereas the glitch activity are
+not the essential activity but they comes due to inherent limitation in circuit design. In this work, our
+objective is to find out the architectural level solutions to reduce the total power dissipation by reducing
+the dynamic glitch power. 
+
+The other type of power dissipation that has gain importance is the static power. The static power is also
+known as leakage because it happens irrespective of any change in inputs. So far there is power supply on,
+the leakage power continue to dissipate.  
+
+
+\section{The Power Dissipation in Multi-core Architecture}
+
+The excessive power dissipation puts a limit on performance improvement of processor.
+We address the dynamic power problem by exploring the possibility of reducing the glitch activity in
+Execution unit of superscalar processor core. 
+
+We have carried out a set of experiment to evaluate the power dissipation for difference benchmark from
+PARSEC and SPLASH suit. The experiment has been carried out to understand and observe the power dissipation
+profile of each benchmark program for different configuration of cores. Further, the experiment has also
+been carried out to observe the power dissipation of each units at micro-architecture level. From the
+plot it can be observed that the power dissipation in Execution unit which are labaled in the plots as
+Core-fp, Core-ALU, and Core-int are relatively high compared to the other stages of super-scalar pipeline.
+
+Also from the plot of total power dissipation for entire core it can be observed that the power dissipation
+for different benchmark vary differently. This observation leads us to the understanding that to reduce the
+over all power dissipation by some means the problem needs to addressed on the basis of application
+(application here we mean the benchmark program). Therefore we looked for the solution which will be
+addressing the power problem on the basis of application. Which leads us to the solution which is of dynamic
+in nature. 
+
+\begin{figure}
+   \includegraphics[scale=1]{./Pictures/PARSEC_neh.jpg}
+   \caption{Total power dissipation for PARSEC benchmark with varying number of cores}
+\end{figure}
+
+%
+%
+%
+
+\begin{figure}
+   \includegraphics[scale=1]{./Pictures/PARSEC_neh.jpg}
+   \caption{Total power dissipation for SPLASH benchmark with varying number of cores}
+\end{figure}
+
+%
+%
+%
+
+\section{The Contributions}
+
+\begin{itemize}
+
+   \item Experiments to identify the power dissipation problem in Execution unit
+
+   \item Designing a configuration for atom-like processor core
+   
+   \item Architecture for reducing glitch activity in Execution unit
+
+\end{itemize}
+
+\section{Chapter Organisation}
+
+The Chapter II provides literature review on power dissipation problem in multi-core architecture. The
+Chapter III explains in detail the problem of interest and the proposed solution. The Chapter IV gives
+experimental results and report concludes in Chapter V. Additional information on sniper simulator, 
+bench marks, and few programs are provided in Appendix. 
+
+
+
+
