@@ -3,6 +3,6 @@
 In the multi-core architecture, the power consumption problem has emerged as a roadblock for performance enhancement. There are two reasons how the power dissipation affects the performance: the first reason is the power dissipation limits the number of core that can be functional simultaneously, and the second reason is that the power dissipation limits to increase the clock frequency of a processor. The multiple cores and higher clock frequency have been the two most effective approaches to increase the performance. Currently, most of the general purpose processors and high performance server processor are operated at 2-3 GHz clock frequency and most of the modern processors are having a number of cores ranging from 4 to 36.In this project we have carried out a study on power dissipation of two different processors for different applications suits from PARSEC and SPLASH benchmark. We have also proposed a solution to solve the power dissipation solution by reducing the over all power dissipation without affecting performance.
 
 
-We have used Sniper for simulation, Nehalem(Intel processor microarchitecture) and Atom (Intel processor microarchitecture) and for Data Visualization & Analysis purpose I used
-Jupiter(Python3)
+# We have used Sniper for simulation, Nehalem(Intel processor microarchitecture) and Atom (Intel processor microarchitecture) and for Data Visualization & Analysis purpose I used
+# Jupiter(Python3)
 
